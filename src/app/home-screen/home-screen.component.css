@@ -1,0 +1,30 @@
+#page{
+    position: relative;
+    margin: auto;
+    margin-top: 14%;
+    width: 50%;
+    padding: 50px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: 1px solid black; 
+}
+
+.title{
+    text-align: center;
+    text-size-adjust: 1vw;
+}
+
+.btn{
+    border-radius: 5px;
+}
+
+#btnBus{
+    position: relative;
+    top: 30px;
+}
+
+#btnMicro{
+    position: relative;
+    top: 30px;
+    left: 52%;
+}

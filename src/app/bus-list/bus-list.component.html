@@ -1,0 +1,27 @@
+<!-- table from Antular DataTable -->
+<div class="tableBus">
+    <div>
+        <h1 id="titleBus">Lista de Rotas para Onibus</h1>
+    </div>   
+    <table *ngIf="routesBus" datatable class="row-border hover">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>codigo</th>
+            <th>Ver Itinerario</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of routesBus">
+            <td>{{item.nome}}</td>
+            <td>{{item.codigo}}</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <button routerLink='/home-screen' routerLinkActive="router-link-active" type="button" class="btn btn-outline-light" id="btnReturn">Voltar para o início</button>
+    <button routerLink='/micro-list' routerLinkActive="router-link-active" type="button" class="btn btn-outline-light" id="btnMicro">Consultar linhas de lotação</button>
+    
+</div>
+

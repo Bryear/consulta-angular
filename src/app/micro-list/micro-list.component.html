@@ -1,0 +1,26 @@
+<div class="tableMicro">
+    <div>
+        <h1 id="titleMicro">Lista de Rotas para Lotação</h1>
+    </div>  
+    <table *ngIf="routesMicro" datatable class="row-border hover">
+        <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Itinerario</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of routesMicro">
+            <td>{{item.codigo}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.Itinerario}}</td>
+        </tr>
+        </tbody>
+    </table>
+    
+    <button routerLink='/home-screen' routerLinkActive="router-link-active" type="button" class="btn btn-outline-dark" id="btnReturn">Voltar para o início</button>
+    <button routerLink='/bus-list' routerLinkActive="router-link-active" type="button" class="btn btn-outline-dark" id="btnBus">Consultar linhas de Onibus</button>
+
+</div>
+
